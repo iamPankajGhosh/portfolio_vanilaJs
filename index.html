@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+        - primary meta tags
+    -->
+    <title>Pankaj Ghosh • Web developer</title>
+    <meta name="title" content="Pankaj Ghosh • Web developer" />
+    <meta
+      name="description"
+      content="Immerse yourself in a captivating visual journey. Discover the innovative designs, stunning illustrations, and impressive projects of Pankaj Ghosh through their diverse portfolio. Unleash your imagination and be inspired."
+    />
+
+    <!--.
+        - favicon
+    -->
+    <link
+      rel="shortcut icon"
+      href="./public/favicon.svg"
+      type="image/svg+xml"
+    />
+
+    <!--
+        - google fonts link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!--
+        - preload images
+    -->
+    <link rel="preload" as="image" href="./src/assets/hero-banner.jpg" />
+  </head>
+  <body>
+    <!--
+      - #PRELOADER
+    -->
+
+    <div class="preloader" data-preloader>
+      <div class="circle"></div>
+    </div>
+
+    <!--
+      - #HEADER
+    -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="https://pankajghosh.netlify.app/" class="logo">
+          <img
+            src="./src/assets/logo.svg"
+            width="170"
+            height="40"
+            alt="project home"
+          />
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link" data-nav-toggler>Home</a>
+            </li>
+
+            <li>
+              <a href="#services" class="navbar-link" data-nav-toggler
+                >Services</a
+              >
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link" data-nav-toggler>Skills</a>
+            </li>
+
+            <li>
+              <a href="#project" class="navbar-link" data-nav-toggler
+                >project</a
+              >
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-nav-toggler>Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-toggler
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--
+          - #HERO
+        -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Pankaj Ghosh</h1>
+
+              <p class="hero-subtitle">Web developer</p>
+
+              <div class="hero-banner">
+                <img
+                  src="./src/assets/hero-banner.jpg"
+                  width="800"
+                  height="800"
+                  alt="Pankaj Ghosh"
+                  class="w-100"
+                />
+              </div>
+
+              <p class="section-text">
+                A highly motivated front end developer with a passion for
+                creating visually appealing and user friendly web applications.
+                Seeking an entry level position as a front end developer to
+                utilize my technical skills and creativity to contribute to the
+                success of a dynamic organization.
+              </p>
+
+              <a
+                href="./public/resume_pankajghosh.pdf"
+                download
+                class="btn has-before"
+              >
+                <span class="span">Download CV</span>
+
+                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - #SERVICE
+        -->
+
+        <section class="service" aria-labelledby="service-label" id="services">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Services That I Provide</p>
+
+                <h2 class="h2 section-title" id="service-label">Services</h2>
+              </div>
+
+              <p class="section-text">
+                Phasellus et lacus suscipit congue nisl the volutpat magna.
+                donec miss the drana risus tincidunt convallis velit orci congue
+                tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss
+                the imperdiet metus ornare.
+              </p>
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list" data-slider-container>
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Website Design</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="podium-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">SEO Marketing</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">02</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="basket-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">eCommerce</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">03</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="color-filter-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Graphic Design</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">04</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="megaphone-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Digital Marketing</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">05</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Social Media</h3>
+
+                    <p class="card-text">
+                      Website ravida surna eveti semen the conse tusio anivite
+                      dianne one nivam acestion vue artin dictum.
+                    </p>
+
+                    <span class="text-lg card-number">06</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button
+                  class="slider-control prev"
+                  data-slider-prev
+                  aria-label="Slide to previous item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+
+                <button
+                  class="slider-control next"
+                  data-slider-next
+                  aria-label="Slide to next item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - #SKILLS
+        -->
+
+        <section class="section skills" aria-label="our skills" id="skills">
+          <div class="container">
+            <p class="section-subtitle">I Make The Future</p>
+
+            <h2 class="h2 section-title">I Develop & Create Digital Future.</h2>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  I'm proficient in <strong>HTML5, CSS3, JavsScript</strong>.
+                  Familiarity with CSS pre-processor such as
+                  <strong>Sass</strong>. Knlowledge of version control systems
+                  like <strong>Git</strong>. Familiarity with frontend
+                  frameworks and libraries, such as
+                  <strong>Bootstrap</strong> and <strong>React</strong>. Basic
+                  knlowledge of backend technologies like
+                  <strong>Node.js</strong>
+                </p>
+
+                <p class="section-text">
+                  Quick learner with the ability to adapt to new technologies
+                  and framworks
+                </p>
+
+                <a href="mailto:pankajghosh998@gmail.com" class="btn has-before"
+                  >pankajghosh998@gmail.com</a
+                >
+              </div>
+
+              <div>
+                <ul class="skills-list">
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">HTML5</p>
+
+                      <data class="progress-value" value="65">65%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 65%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">CSS3</p>
+
+                      <data class="progress-value" value="55">55%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 55%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">JavaScript</p>
+
+                      <data class="progress-value" value="50">50%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 50%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Web Design</p>
+
+                      <data class="progress-value" value="70">70%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - #PROJECT
+        -->
+
+        <section class="project" aria-labelledby="project-label" id="project">
+          <div class="title-wrapper container">
+            <div>
+              <p class="section-subtitle" id="project-label">Our Works</p>
+
+              <h2 class="h2 section-title">project</h2>
+            </div>
+
+            <div class="section-text">
+              Welcome to my project showcase! Explore my diverse range of
+              projects, where creativity meets innovation. From web development
+              to interactive experiences, I strive for excellence in every
+              detail. Let's connect and bring extraordinary projects to life.
+            </div>
+          </div>
+
+          <div class="slider" data-slider>
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                <div
+                  class="project-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./src/assets/project-1.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="project"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Prime video clone</h3>
+
+                    <p class="card-text">Web App / Development</p>
+
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://pankajghosh-primevideo.netlify.app/"
+                        class="btn"
+                        >Go Live</a
+                      >
+                      <a
+                        href="https://github.com/iamPankajGhosh/prime-video-clone"
+                        class="btn"
+                        >Source</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="project-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./src/assets/project-2.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="project"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">TextUtils</h3>
+
+                    <p class="card-text">Web App / Development</p>
+
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://pankajghosh-textutils.netlify.app/"
+                        class="btn"
+                        >Go Live</a
+                      >
+                      <a
+                        href="https://github.com/iamPankajGhosh/text-utils"
+                        class="btn"
+                        >Source</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="project-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./src/assets/project-3.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="project"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Capital City Quiz</h3>
+
+                    <p class="card-text">CLI App / Development</p>
+
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://replit.com/@PankajGhosh998/Capital-Cities-Quiz?embed=1&output=1"
+                        class="btn"
+                        >Go Live</a
+                      >
+                      <a
+                        href="https://github.com/iamPankajGhosh/capital-city-quiz"
+                        class="btn"
+                        >Source</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="project-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="./src/assets/project-4.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="project"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Movie Mania</h3>
+
+                    <p class="card-text">Website / Development</p>
+
+                    <div class="btn-wrapper">
+                      <a
+                        href="https://pankajghosh-moviemania.netlify.app/"
+                        class="btn"
+                      >
+                        Go Live
+                      </a>
+                      <a
+                        href="https://github.com/iamPankajGhosh/movie-mania"
+                        class="btn"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slider-controls">
+              <button
+                class="slider-control prev"
+                data-slider-prev
+                aria-label="Slide to previous item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button
+                class="slider-control next"
+                data-slider-next
+                aria-label="Slide to next item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!--
+          - #BLOG
+        -->
+
+        <section class="section blog" aria-labelledby="blog-label" id="blog">
+          <div class="container">
+            <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+            <h2 class="h2 section-title">Latest News</h2>
+
+            <ul class="blog-list">
+              <li class="blog-card">
+                <figure
+                  class="card-banner card-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./src/assets/blog-1.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt="Get Started With Tiktok Ads."
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <time class="time" datetime="2023-05-24">
+                    <span class="span text-lg">24</span>
+                    May 2023
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      Get Started With Tiktok Ads. (Dummy blog)
+                    </h3>
+
+                    <p class="card-text">
+                      The most well-known dummy text is the 'Lorem Ipsum', which
+                      is said to have originated in the 16th century. Lorem
+                      Ipsum is composed in a pseudo-Latin language which more or
+                      less corresponds to 'proper' Latin. It contains a series
+                      of real Latin words.
+                    </p>
+
+                    <a href="#" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-card">
+                <figure
+                  class="card-banner card-holder"
+                  style="--width: 700; --height: 470"
+                >
+                  <img
+                    src="./src/assets/blog-2.jpg"
+                    width="700"
+                    height="470"
+                    loading="lazy"
+                    alt="UX in Ecommerce – 5 things to avoid."
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <time class="time" datetime="2023-06-04">
+                    <span class="span text-lg">04</span>
+                    June 2023
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      UX in Ecommerce – 5 things to avoid. (Dummy blog)
+                    </h3>
+
+                    <p class="card-text">
+                      Dummy text: Its function as a filler or as a tool for
+                      comparing the visual impression of different typefaces
+                      Dummy text is text that is used in the publishing industry
+                      or by web designers to occupy the space which will later
+                      be filled with 'real' content.
+                    </p>
+
+                    <a href="#" class="btn has-before">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--
+      - #FOOTER
+    -->
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in touch</p>
+          </li>
+
+          <li>
+            <a href="mailto:pankajghosh998@gmail.com" class="footer-link">
+              pankajghosh998@gmail.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Locations</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"> India </a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/iampankajghosh/"
+              class="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/iamPankajGhosh" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/im_pankajghosh" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--
+        - custom js link
+    -->
+    <script src="./src/script.js"></script>
+
+    <!--
+        - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
